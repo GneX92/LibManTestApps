@@ -1,0 +1,17 @@
+﻿<table>
+	<tr>
+		<th>ISBN</th>
+		<th>Title</th>
+		<th>Release Date</th>
+		<th>Category</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.Isbn</td>
+			<td>@item.Title</td>
+			<td>@item.Year</td>
+			<td>@item.Category.CategoryName</td>
+		</tr>
+	}
+</table>

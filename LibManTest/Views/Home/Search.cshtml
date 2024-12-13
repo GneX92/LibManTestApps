@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Booksearch";
+}
+
+@model Book
+<div class="maindiv">
+    <div>
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="SearchBooks" asp-controller="Home" method="post" data-ajax="true" data-ajax-update="#results">    
+        <input asp-for="Title" />
+    </form>
+    </div>
+    <div>
+        <button>Suchen</button>
+    </div>
+    <div id="results">
+
+    </div>
+</div>
+

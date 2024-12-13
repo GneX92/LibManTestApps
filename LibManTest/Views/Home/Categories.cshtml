@@ -1,0 +1,7 @@
+﻿<div class="maindiv">
+    <h1>Categories</h1>
+    <form asp-action="CategorySearch" asp-controller="Home" method="post" data-ajax="true" data-ajax-update="#result">
+    @Html.DropDownList("Category")
+    </form>
+</div>
+<div id="result"></div>
